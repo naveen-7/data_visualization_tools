@@ -77,8 +77,6 @@ else
 end
 
 
-
-
 % --- Stats type ---
 isstats = cellfun(@(x) ischar(x) && strcmp(x, 'stats'), varargin);
 if any(isstats)
@@ -203,8 +201,6 @@ if xrange<0.5
     xrange = 0.5;
 end
 xlim([1-xrange size(rt,1)+xrange])
-
-
 
 
 end
