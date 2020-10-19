@@ -9,8 +9,6 @@ for p=1:8
     Vec_X= Vec_X + Vec(p)*cos(Angle(p));
 end
 
-
-
 if (Vec_Y>0 && Vec_X>0) || (Vec_Y<0 && Vec_X>0)
     Vec_RF_A = atan(Vec_Y/Vec_X);
 elseif (Vec_Y<0 && Vec_X<0)  || (Vec_Y>0 && Vec_X<0)
@@ -18,6 +16,5 @@ elseif (Vec_Y<0 && Vec_X<0)  || (Vec_Y>0 && Vec_X<0)
 end
 
 Vec_RF_M = sqrt((Vec_Y*Vec_Y) + (Vec_X*Vec_X));
-
 
 end
